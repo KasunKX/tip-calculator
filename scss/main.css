@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+@media all and (max-width: 800px) {
+  body .main-container {
+    width: 100vw;
+    background-color: red;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #c5e4e7;
+}
+
+body {
+  width: 100%;
+  height: 45.75vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: 'Space Mono', monospace;
+}
+
+body .main-container {
+  width: 52%;
+  height: 27.5vw;
+  background-color: white;
+  border-radius: 1vw;
+  padding: 1vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1vw;
+}
+
+body .main-container .left-side {
+  background: white;
+  padding: 1vw;
+}
+
+body .main-container .left-side .bill {
+  background-color: white;
+  font-size: 1vw;
+  color: #5e7a7d;
+  font-weight: 600;
+  position: relative;
+  top: .8vw;
+}
+
+body .main-container .left-side input[type=number] {
+  width: 96%;
+  margin-top: 1.5vw;
+  border: none;
+  outline: none;
+  height: 2.6vw;
+  background-color: #ecf4f4;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: right;
+  padding: 1vw;
+  font-size: 1.2vw;
+  font-family: 'Space Mono', monospace;
+  color: #00494d;
+  font-weight: 700;
+  border-radius: 2vw;
+}
+
+body .main-container .left-side img {
+  position: absolute;
+  width: .8vw;
+  background-color: transparent;
+  left: 27.2vw;
+  top: 14.7vw;
+}
+
+body .main-container .left-side input[type=number]::-webkit-outer-spin-button,
+body .main-container .left-side input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body .main-container .left-side .tip-percent {
+  margin-top: 2.5vw;
+  background-color: white;
+}
+
+body .main-container .left-side .tip-percent h3 {
+  background-color: white;
+  color: #5e7a7d;
+  font-size: 1vw;
+}
+
+body .main-container .left-side .percent-buttons {
+  width: 100%;
+  background-color: white;
+  margin-top: .8vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+}
+
+body .main-container .left-side .percent-buttons button {
+  width: 100%;
+  height: 2.5vw;
+  border: none;
+  outline: none;
+  background-color: #00494d;
+  color: white;
+  font-size: 1.25vw;
+  font-family: 'Space Mono', monospace;
+  border-radius: .5vw;
+  cursor: pointer;
+}
+
+body .main-container .left-side .percent-buttons button:hover {
+  background-color: #7f9c9f;
+}
+
+body .main-container .left-side .percent-buttons .custom {
+  background-color: #c5e4e7;
+  color: #5e7a7d;
+  font-weight: 400;
+}
+
+body .main-container .left-side .peoples {
+  background-color: white;
+  margin-top: 1.3vw;
+}
+
+body .main-container .left-side .person-img {
+  top: 32.5vw;
+}
+
+body .main-container .right-side {
+  background-color: #00494d;
+  border-radius: 1vw;
+  padding: 1.8vw;
+  padding-top: 3vw;
+  padding-bottom: 2vw;
+  color: #f4fafa;
+}
+
+body .main-container .right-side .amount, body .main-container .right-side .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #00494d;
+}
+
+body .main-container .right-side .amount h3, body .main-container .right-side .total h3 {
+  background-color: #00494d;
+  font-size: 1.2vw;
+}
+
+body .main-container .right-side .amount .per, body .main-container .right-side .total .per {
+  position: absolute;
+  background-color: #00494d;
+  top: 16.5vw;
+  font-size: .8vw;
+  font-weight: 300;
+  color: #5e7a7d;
+}
+
+body .main-container .right-side .amount h1, body .main-container .right-side .total h1 {
+  font-size: 3vw;
+  background-color: #00494d;
+  color: #26c0ab;
+}
+
+body .main-container .right-side .total {
+  margin-top: 2vw;
+}
+
+body .main-container .right-side .total #per-two {
+  top: 23vw;
+  position: absolute;
+}
+
+body .main-container .right-side .reset-div {
+  margin-top: 6.5vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #00494d;
+}
+
+body .main-container .right-side .reset-div button {
+  width: 20vw;
+  height: 3vw;
+  background-color: #26c0ab;
+  border: none;
+  outline: none;
+  color: #00494d;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body .main-container .right-side .reset-div button:hover {
+  background-color: #006f75;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #c5e4e7;
+}
+
+.splitter {
+  display: none;
+}
+
+@media all and (max-width: 800px) {
+  body .main-container {
+    width: 100vw;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: white;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 40vw;
+    border-radius: 7vw;
+  }
+  body .main-container .left-side {
+    padding: 1.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  body .main-container .left-side .bill {
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+  }
+  body .main-container .left-side input[type=number] {
+    width: 96%;
+    height: 9vw;
+    margin-bottom: 2vw;
+    font-size: 4vw;
+  }
+  body .main-container .left-side .tip-percent h3 {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+  }
+  body .main-container .left-side .percent-buttons {
+    margin-bottom: 3vw;
+  }
+  body .main-container .left-side .percent-buttons button {
+    font-size: 3.5vw;
+    height: 8.5vw;
+    border-radius: 1vw;
+  }
+  body .main-container .right-side {
+    padding: 5vw;
+    border-radius: 3vw;
+  }
+  body .main-container .right-side .amount, body .main-container .right-side .total {
+    margin-bottom: 10vw;
+  }
+  body .main-container .right-side .amount h3, body .main-container .right-side .total h3 {
+    font-size: 4vw;
+    font-weight: 500;
+  }
+  body .main-container .right-side .total {
+    margin-bottom: 16vw;
+  }
+  body .main-container .right-side .total-main h1, body .main-container .right-side .tip-main h1 {
+    font-size: 6.5vw;
+  }
+  body .main-container .right-side .total-main h3, body .main-container .right-side .tip-main h3 {
+    font-size: 6.5vw;
+  }
+  body .main-container .right-side .reset-div button {
+    width: 80vw;
+    height: 10vw;
+    border-radius: 1vw;
+    font-size: 5vw;
+    font-weight: 400;
+  }
+  body .splitter {
+    display: -ms-grid;
+    display: grid;
+    position: absolute;
+    letter-spacing: 1vw;
+    color: #00494d;
+    font-size: 5vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <div class="left-side">
+
+      <h3 class="bill">Bill</h3>
+      <input type="number" name="bill-number" id="billNumber">
+
+      <div class="tip-percent">
+        <h3 class="select-h3">
+          Select tip %
+        </h3>
+
+        <div class="percent-buttons">
+          <button class="five" id="buttonOne">5%</button>
+          <button class="ten" id="buttonTwo">10%</button>
+          <button class="fifteen" id="buttonThree">15%</button>
+          <button class="twenty-five" id="buttonFour">25%</button>
+          <button class="fifty" id="buttonFive">50%</button>
+          <button class="custom" id="buttonCustom">Custom</button>
+        </div>
+
+        <div class="peoples">
+          <h3 class="bill">
+            Number of peoples
+
+          </h3>
+
+          <input type="number" name="people-count" id="numberPeoples">
+
+          <img src="./images/icon-person.svg" alt="" class="person-img">
+
+        </div>
+
+      </div>
+
+      <img src="./images/icon-dollar.svg" alt="">
+    </div>
+
+    <div class="right-side">
+
+      <div class="amount">
+        <h3 class="tip-am">
+          Tip Amount
+        </h3>
+
+        <h2 class="per"></h2>
+
+        <div class="tip-main">
+          <h1 class="numric-tip" id="tip">
+            $
+          </h1>
+        </div>
+
+
+      </div>
+
+      <div class="total">
+        <h3 class="tip-am">
+          Total
+        </h3>
+
+        <h2 class="per" id="per-two"></h2>
+
+        <div class="total-main">
+          <h1 class="numric-tip" id="total">
+            $
+          </h1>
+        </div>
+      </div>
+
+      <div class="reset-div">
+        <button class="reset" id="resetFields">RESET</button>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <h1 class="splitter">SPLI<br>TTER</h1>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

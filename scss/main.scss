@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+
+@import "./_responsive";
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background:hsl(185, 41%, 84%)
+}
+
+body{
+   width: 100%;
+   height: 45.75vw;
+   display: grid;
+   place-items: center;
+   font-family: 'Space Mono', monospace;
+   
+   
+   & .main-container{
+      width: 52%;
+      height: 27.5vw;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 1vw;
+      padding: 1vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1vw;
+
+   
+      & .left-side{
+         background: white;
+         padding: 1vw;
+
+         & .bill{
+            background-color: white;
+            font-size: 1vw;
+            color:  hsl(186, 14%, 43%);
+            font-weight: 600;
+            position: relative;
+            top: .8vw;
+         }
+         & input[type=number]{
+            width: 96%;
+            margin-top: 1.5vw;
+            border: none;
+            outline: none;
+            height: 2.6vw;
+            background-color: hsl(180, 27%, 94%);
+            appearance: none;
+            text-align: right;
+            padding: 1vw;
+            font-size: 1.2vw;
+            font-family: 'Space Mono', monospace;
+            color: hsl(183, 100%, 15%);
+            font-weight: 700;
+            border-radius: 2vw;
+         }
+         & img{
+            position:absolute;
+            width: .8vw;
+            background-color: transparent;
+            left: 27.2vw;
+            top: 14.7vw;
+         }
+        
+         input[type=number]::-webkit-outer-spin-button,
+         input[type=number]::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+         }
+
+         & .tip-percent{
+            margin-top: 2.5vw;
+            background-color: white;
+
+            & h3{
+               background-color: white;
+               color:  hsl(186, 14%, 43%);
+               font-size: 1vw;
+            }
+         }
+
+         & .percent-buttons{
+            width: 100%;
+            background-color: white;
+            margin-top: .8vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1vw;
+
+            & button{
+               width: 100%;
+               height: 2.5vw;
+               border: none;
+               outline: none;
+               background-color:  hsl(183, 100%, 15%);
+               color: white;
+               font-size: 1.25vw;
+               font-family: 'Space Mono', monospace;
+               border-radius: .5vw;
+               cursor: pointer;
+            }
+            
+            & button:hover{
+               background-color: hsl(184, 14%, 56%);
+            }
+
+            & .custom{
+               background-color: hsl(185, 41%, 84%);
+               color: hsl(186, 14%, 43%);
+               font-weight: 400;
+
+            }
+         }
+
+         & .peoples{
+            background-color: white;
+            margin-top: 1.3vw;
+         }
+
+         & .person-img{
+            top: 32.5vw;
+         }
+
+      }
+    
+    
+      & .right-side{
+         background-color:  hsl(183, 100%, 15%);
+         border-radius: 1vw;
+         padding: 1.8vw;
+         padding-top: 3vw;
+         padding-bottom: 2vw;
+         color: hsl(189, 41%, 97%);
+
+         & .amount, .total{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            background-color:  hsl(183, 100%, 15%);
+
+
+           & h3{
+               background-color:  hsl(183, 100%, 15%);
+               font-size: 1.2vw;
+            }
+            & .per{
+               position: absolute;
+               background-color:hsl(183, 100%, 15%);
+               top: 16.5vw;
+               font-size: .8vw;
+               font-weight: 300;
+               color: hsl(186, 14%, 43%);
+            }
+            & h1{
+               font-size: 3vw;
+               background-color: hsl(183, 100%, 15%);
+               color: hsl(172, 67%, 45%);
+            }
+         }
+
+         & .total{
+            margin-top: 2vw;
+
+            & #per-two{
+               top: 23vw;
+               position: absolute;
+            }
+         }
+
+         & .reset-div{
+            margin-top: 6.5vw;
+            display: grid;
+            place-items: center;
+            background-color: hsl(183, 100%, 15%);
+
+            & button{
+               width: 20vw;
+               height: 3vw;
+               background-color: hsl(172, 67%, 45%);
+               border: none;
+               outline: none;
+               color: hsl(183, 100%, 15%);
+               font-size: 1.2vw;
+               font-weight: 600;
+               cursor: pointer;
+               transition: .3s;
+        
+            
+            }
+            & button:hover{
+               background-color: hsl(183, 100%, 23%);
+               transition: .3s;
+               color:  hsl(185, 41%, 84%);
+            }
+         }
+         
+      }
+   }
+}
+
+.splitter{
+   display: none;
+}
+
+@media all and (max-width:800px){
+
+   body{
+    
+
+      & .main-container{
+         width: 100vw;
+         grid-template-columns: 1fr;
+         padding: 1vw;
+         padding-left: 5vw;
+         padding-right: 5vw;
+         background-color: white;
+         height: fit-content;
+         margin-top: 40vw;
+         border-radius: 7vw;
+       
+         & .left-side{
+            padding: 1.5vw;
+            padding-left: 5vw;
+            padding-right: 5vw;
+
+            & .bill{
+               font-size:4vw;
+               font-weight: 500;
+               margin-bottom: 2vw;
+            }
+            & input[type=number]{
+               width: 96%;
+               height: 9vw;
+               margin-bottom: 2vw;
+               font-size: 4vw;
+         }
+            & .tip-percent{
+
+               & h3{
+                  font-size: 4vw;
+                  font-weight: 400;
+                  margin-bottom: 2vw;
+               }
+            }
+            & .percent-buttons{
+               margin-bottom: 3vw;
+               & button{
+                  font-size: 3.5vw;
+                  height: 8.5vw;
+                  border-radius:1vw
+               }
+            }
+         }
+         & .right-side{
+            padding: 5vw;
+            border-radius: 3vw;
+
+
+            & .amount, .total{
+                margin-bottom: 10vw;
+
+               & h3{
+                  font-size: 4vw;
+                  font-weight: 500;
+               }
+             }
+            & .total{
+               margin-bottom: 16vw;
+            } 
+            & .total-main, .tip-main{
+               & h1{
+                  font-size: 6.5vw;
+               }
+               & h3{
+                  font-size: 6.5vw;
+               }
+            }
+
+            & .reset-div {
+     
+               & button{
+                  width: 80vw;
+                  height: 10vw;
+                  border-radius: 1vw;
+                  font-size: 5vw;
+                  font-weight: 400;
+
+               }
+            }
+
+         }
+      }
+      & .splitter{
+         display: grid;
+         position: absolute;
+         letter-spacing: 1vw;
+         color: hsl(183, 100%, 15%);
+         font-size: 5vw;
+      }
+   }
+
+}

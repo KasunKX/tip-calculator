@@ -1,0 +1,34 @@
+@media all and (max-width: 800px) {
+  body {
+    font-size: 2.5vw;
+    height: 100vw;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  body div.main-container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    height: 100vw;
+    margin-top: 27vw;
+    border-radius: 5vw;
+    padding: 5vw;
+    height: 120vw;
+  }
+  body div.main-container .left-side .bill, body div.main-container .left-side h3.bill {
+    font-size: 2.7vw;
+  }
+  body div.main-container .left-side #billNumber {
+    height: 5vw;
+  }
+  body div.main-container .left-side input[type=number] {
+    height: 4vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
